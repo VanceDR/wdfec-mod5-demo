@@ -6,7 +6,7 @@ let albums = [
         cover: 'images/anchoret.jpg',
         review: "What made me like this album is the seamless blend of flutes, saxophone, with the heavy and melodic guitar riffs. Additionally, the transitions between heavy and soft are perfectly blended to give space and let the music breathe. What I don't like about this album is that the tones are a little bit repetitive, but the variety of instruments and the overall production of the album makes up for it.",
         score: '4',
-        sample: '<iframe  width="100%" height="100%" src="https://www.youtube.com/embed/g8XhYYEPlz4?si=Kle4ymNnDN91Aq9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        sample: '<iframe  width="100%" height="80dvh" src="https://www.youtube.com/embed/g8XhYYEPlz4?si=Kle4ymNnDN91Aq9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         links: {
             website: 'https://www.theanchoret.com/',
             bandcamp: 'https://theanchoretofficial.bandcamp.com/album/it-all-began-with-loneliness',
@@ -22,7 +22,7 @@ let albums = [
         cover: 'images/chatpile.jpg',
         review: "Chat Pile's music embodies raw and unfiltered emotions people. The album has heavy grooves with spoken poetry lyrical delivery. What I like about this album is the textural rawness of the lyrical delivery accompanied with the heavy and groovy basslines that are accented with haunting guitars. While the album is a great listen, some of the songs seems, specifically in the middle of the album, like it is just added to fill the album.",
         score: '4',
-        sample: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/h8YoyzosPDw?si=pEGL8XSYuAb7p1A-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        sample: '<iframe width="100%" height="80dvh" src="https://www.youtube.com/embed/h8YoyzosPDw?si=pEGL8XSYuAb7p1A-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         links: {
             website: 'https://chatpile.net/',
             bandcamp: 'https://chatpile.bandcamp.com/album/cool-world',
