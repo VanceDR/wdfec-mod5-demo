@@ -50,31 +50,6 @@
             </div>
             <div class="ui container">
                 <ul id="2024-list" class="ui cards">
-                    <div class="card">
-                        <div class="content items">
-                            <div class="card-top item">
-                                <div class="card-image image">
-                                    <img src="images/anchoret.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="ui rating" data-rating="4" data-max-rating="5"></div>
-                                    <div class="header"><span>Title</span> <span>(Year)</span></div>
-                                    <div class="header"><span>Artist</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="extra content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi, inventore tempora deserunt, minima unde eligendi numquam consectetur ex corrupti deleniti, voluptas cupiditate est sed voluptate quo culpa? Ullam, animi!</p></div>
-                        <div class="extra content">
-                            <details class="ui card-links-con" > 
-                                <summary>Links</summary>
-                                <div class="menu text card-links">
-                                    <a class="item" href="">Links</a>
-                                    <a class="item" href="">Links</a>
-                                    <a class="item" href="">Links</a>
-                                </div>
-                            </details>
-                        </div>
-                    </div>
                 </ul>
             </div>
             
@@ -83,16 +58,15 @@
         <section class="ui" id="year-2023">
             <div class="text-container">
                 <h2>Year 2023</h2>
-                <p>Here are some of my favorite songs, albums, and artists from 2023:</p>
+                <p>The year 2023 is a year of music exploration. This year I learned about Swancore, started listening to Progressive Metal, and discovering other underground bands.</p>
             </div>
             <div class="ui container">
                 <ul id="2023-list" class="ui cards">
-                    
                 </ul>
             </div>
         </section>
         <div popover id="sampleMusicPopover" class="ui segment raised">
-            <div style="float: right; position: relative; cursor: pointer;" onclick="sampleMusicPopover.hidePopover()"><i class="icon close"></i></div>
+            <div style="float: right; position: relative; cursor: pointer;" onclick="sampleMusicPopover.hidePopover(), sampleMusicCon.innerHTML = ''"><i class="icon close"></i></div>
             <div class="header">Sample Music</div>
             <div class="ui divider compact"></div>
             <div id="sampleMusicCon">
