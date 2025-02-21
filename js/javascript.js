@@ -41,7 +41,7 @@ function createAlbumCards(year) {
 
 function createCard(album) {
     return `
-    <div class="card">
+    <div class="card" tabindex="0">
         <div class="content items">
             <div class="card-top item">
                 <div class="card-image image">
@@ -60,7 +60,7 @@ function createCard(album) {
                 <summary style="cursor: pointer;" title="Show Links">Links</summary>
                 <div class="menu text card-links">
                     ${Object.keys(album.links).map(a => `<a href="${album.links[a]}" target="_blank" class="item" title="${a} link">${a} <i class="ui icon ${a == 'website' ? 'linkify' : a}"></i></a>`).join('')}
-                    ${album.sample ? ` <a data-album="${album.title}" onclick="openPopover(event, this);" target="_blank" class="item" title="sample"><i class="icon music"></i></a>` : ''}
+                    ${album.sample ? ` <a data-album="${album.title}" href="#" onclick="openPopover(event, this);" target="_blank" class="item" title="sample"><i class="icon music"></i></a>` : ''}
                 </div>
             </details>
         </div>
