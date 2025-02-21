@@ -152,7 +152,7 @@ function init() {
     createAlbumCards("2023")
     $('.ui.rating')
         .rating('disable')
-    ;
+        ;
 }
 
 function toggleDarkMode() {

@@ -1,110 +1,110 @@
 :root {
-    font-size: 18px;
+  font-size: 18px;
 }
 header {
-    position: sticky;
-    background: #fff !important;
-    z-index: 1000;
+  position: sticky;
+  background: #fff !important;
+  z-index: 1000;
 }
 
 header nav {
-    float: left;
-    z-index: 20;
+  float: left;
+  z-index: 20;
 }
 header h1 {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-nav ul{
-    padding-left: 1rem;
+nav ul {
+  padding-left: 1rem;
 }
 
 main section {
-    scroll-margin-top: 54px;
-    height: calc(100% - 2em);
-    display: grid;
-    padding: 1em;
-    /* padding-top: 32px; */
-    justify-items: center;
-    align-content: start;
-    text-align:center;
+  scroll-margin-top: 54px;
+  height: calc(100% - 2em);
+  display: grid;
+  padding: 1em;
+  /* padding-top: 32px; */
+  justify-items: center;
+  align-content: start;
+  text-align: center;
 }
 
 main section:first-of-type {
-    background: #f0f0f0;
-    height: 100dvh;
-    align-content: center;
+  background: #f0f0f0;
+  height: 100dvh;
+  align-content: center;
 }
 
 .text-container {
-    max-width: 80ch;
-    margin: 0 auto;
-    text-wrap: pretty;
+  max-width: 80ch;
+  margin: 0 auto;
+  text-wrap: pretty;
 }
 
 main section ul {
-    padding-left: 0;
-    width: 100%;
+  padding-left: 0;
+  width: 100%;
 }
 
 .ui.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(60ch, 100%), 1fr));
-    gap: 1em;
-    justify-items: center;
-    align-items: start;
-    padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(60ch, 100%), 1fr));
+  gap: 1em;
+  justify-items: center;
+  align-items: start;
+  padding: 1em;
 }
-.ui.cards > .card  {
-    width: 100%;
-    /* width: 100%; */
+.ui.cards > .card {
+  width: 100%;
+  /* width: 100%; */
 }
 .card-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    align-items: end;
-    text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: end;
+  text-align: left;
 }
-.card-image img{
-    width: 100%;
-    /* height: auto; */
+.card-image img {
+  width: 100%;
+  /* height: auto; */
 }
 
 .card-links-con {
-    display:flex; 
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 .card-links {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 0 0.5em;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 0.5em;
+  align-items: center;
 }
 
 .album-title {
-    font-size: 1.75em;
-    font-weight: bold;
-    line-height: 1.1;
-    margin-bottom: 0.2em;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 0.2em;
 }
 .album-artist {
-    font-size: 1.75em;
-    font-weight: 100;
-    font-style: italic;
+  font-size: 1.75em;
+  font-weight: 100;
+  font-style: italic;
 }
 
 dialog.ui.raised.segment {
-    border: none;
-    outline: none;
-    margin: auto;
-    position: fixed !important; 
-    height: calc(100% - 6em);
-    width: calc(100% - 4em);
-    /* max-height: fit-content; */
-    overflow: auto;
+  border: none;
+  outline: none;
+  margin: auto;
+  position: fixed !important;
+  height: calc(100% - 6em);
+  width: calc(100% - 4em);
+  /* max-height: fit-content; */
+  overflow: auto;
 }
 dialog iframe {
-    height: 70dvh;
+  height: 70dvh;
 }
