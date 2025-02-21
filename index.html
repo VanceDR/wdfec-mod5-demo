@@ -23,10 +23,10 @@
             <nav id="top-menu" class="ui icon item floating simple dropdown">
                 <i class="icon bars"></i>
                 <ul class="menu">
-                    <li class="item"><a class="item" href="#home">Home</a></li>
-                    <li class="item"><a class="item" href="#year-2024">Year 2024</a></li>
-                    <li class="item"> <a class="item" href="#year-2023">Year 2023</a></li>
-                    <li tabindex="0" class="item icon" onclick="toggleDarkMode()" id="darkModeBtn"><i class="ui icon moon"></i></li>
+                    <li class="item"><a class="item" href="#home" onfocus="showDropdown()" onblur="hideDropdown()">Home</a></li>
+                    <li class="item"><a class="item" href="#year-2024" onfocus="showDropdown()" onblur="hideDropdown()">Year 2024</a></li>
+                    <li class="item"> <a class="item" href="#year-2023" onfocus="showDropdown()" onblur="hideDropdown()">Year 2023</a></li>
+                    <li class="item icon"><a id="darkModeBtn" class="item" href="#" onfocus="showDropdown()" onblur="hideDropdown()" onclick="event.preventDefault(), toggleDarkMode()"><i class="ui icon moon"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -69,7 +69,7 @@
             </div>
         </section>
         <dialog id="sampleMusicPopover" class="ui segment raised">
-            <div style="float: right; position: relative; cursor: pointer;"
+            <div tabindex="0" style="float: right; position: relative; cursor: pointer;"
                 onclick="sampleMusicPopover.close(), sampleMusicCon.innerHTML = ''"><i class="icon close"></i></div>
             <div class="header">Sample Music</div>
             <div class="ui divider compact"></div>

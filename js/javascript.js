@@ -39,6 +39,16 @@ function createAlbumCards(year) {
     container.innerHTML = `${list.map(a => createCard(a)).join('')}`;
 }
 
+function showDropdown() {
+    let dropdown = document.getElementById('top-menu');
+    dropdown.classList.add('active');
+}
+
+function hideDropdown() {
+    let dropdown = document.getElementById('top-menu');
+    dropdown.classList.remove('active');
+}
+
 function createCard(album) {
     return `
     <div class="card" tabindex="0">
