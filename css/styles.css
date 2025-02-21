@@ -95,7 +95,7 @@ main section ul {
     font-style: italic;
 }
 
-.ui.raised.segment[popover] {
+dialog.ui.raised.segment {
     border: none;
     outline: none;
     margin: auto;
@@ -105,6 +105,6 @@ main section ul {
     /* max-height: fit-content; */
     overflow: auto;
 }
-[popover] iframe {
+dialog iframe {
     height: 70dvh;
 }

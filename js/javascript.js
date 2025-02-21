@@ -72,7 +72,7 @@ function openPopover(event, element) {
     event.preventDefault();
     let popover = document.getElementById('sampleMusicPopover');
     let con = document.getElementById('sampleMusicCon');
-    popover.showPopover();
+    popover.showModal();
     con.innerHTML = albums.find(a => a.title == element.dataset.album).sample;
 }
 
