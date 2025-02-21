@@ -20,10 +20,11 @@ nav ul{
 }
 
 main section {
-    padding-top: 32px;
     scroll-margin-top: 54px;
-    height: 95dvh;
+    height: calc(100% - 2em);
     display: grid;
+    padding: 1em;
+    /* padding-top: 32px; */
     justify-items: center;
     align-content: start;
     text-align:center;
@@ -31,6 +32,7 @@ main section {
 
 main section:first-of-type {
     background: #f0f0f0;
+    height: 100dvh;
     align-content: center;
 }
 

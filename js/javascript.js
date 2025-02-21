@@ -86,7 +86,7 @@ function checkBreakpoint() {
     // Get the icon element
     let icon = dropdown.querySelector('i');
     // Get the heading element
-    let nav_heading = navigation.querySelector('h1');
+    let nav_heading = navigation.querySelector('.header.item');
     // Get the menu element
     let menu = dropdown.querySelector('.menu');
     if (window.innerWidth >= 768) {

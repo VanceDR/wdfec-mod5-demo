@@ -19,14 +19,14 @@
 <body onload="init()">
     <main id="main" class="ui">
         <header id="navigation" class="ui attached top text menu">
-            <h1 class="header item">Album Ramblings</h1>
+            <div class="header item">Album Ramblings</div>
             <nav id="top-menu" class="ui icon item floating simple dropdown">
                 <i class="icon bars"></i>
                 <ul class="menu">
                     <li class="item"><a class="item" href="#home">Home</a></li>
                     <li class="item"><a class="item" href="#year-2024">Year 2024</a></li>
                     <li class="item"> <a class="item" href="#year-2023">Year 2023</a></li>
-                    <li class="item icon" onclick="toggleDarkMode()" onclick="toggleDarkMode()" id="darkModeBtn"><i class="ui icon moon"></i></li>
+                    <li class="item icon" onclick="toggleDarkMode()" id="darkModeBtn"><i class="ui icon moon"></i></li>
                 </ul>
             </nav>
         </header>
@@ -65,13 +65,13 @@
                 </ul>
             </div>
         </section>
-        <div popover id="sampleMusicPopover" class="ui segment raised">
+        <dialog popover id="sampleMusicPopover" class="ui segment raised">
             <div style="float: right; position: relative; cursor: pointer;" onclick="sampleMusicPopover.hidePopover(), sampleMusicCon.innerHTML = ''"><i class="icon close"></i></div>
             <div class="header">Sample Music</div>
             <div class="ui divider compact"></div>
             <div id="sampleMusicCon">
             </div>
-        </div>
+        </dialog>
     </main>
 </body>
 
