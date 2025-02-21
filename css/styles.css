@@ -14,7 +14,10 @@ header nav {
 header h1 {
   margin: 0 auto;
 }
-
+a {
+    color: #000;
+    text-decoration: underline;
+}
 nav ul {
   padding-left: 1rem;
 }
@@ -31,7 +34,7 @@ main section {
 }
 
 main section:first-of-type {
-  background: #f0f0f0;
+  background: #fafafa;
   height: 100dvh;
   align-content: center;
 }

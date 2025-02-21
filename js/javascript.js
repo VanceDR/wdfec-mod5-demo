@@ -54,8 +54,8 @@ function createCard(album) {
                 </div>
             </div>
         </div>
-        <div class="extra content"><p>${album.review}</p></div>
-        <div class="extra content">
+        <div class="content"><p>${album.review}</p></div>
+        <div class="content">
             <details class="ui card-links-con" > 
                 <summary style="cursor: pointer;" title="Show Links">Links</summary>
                 <div class="menu text card-links">
