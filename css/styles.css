@@ -1,0 +1,105 @@
+:root {
+    font-size: 18px;
+}
+header {
+    position: sticky;
+    background: #fff !important;
+    z-index: 1000;
+}
+
+header nav {
+    float: left;
+    z-index: 20;
+}
+header h1 {
+    margin: 0 auto;
+}
+
+nav ul{
+    padding-left: 1rem;
+}
+
+main section {
+    padding-top: 32px;
+    scroll-margin-top: 54px;
+    height: 95dvh;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    text-align:center;
+}
+
+main section:first-of-type {
+    background: #f0f0f0;
+    align-content: center;
+}
+
+.text-container {
+    max-width: 80ch;
+    margin: 0 auto;
+    text-wrap: pretty;
+}
+
+main section ul {
+    padding-left: 0;
+    width: 100%;
+}
+
+.ui.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(60ch, 100%), 1fr));
+    gap: 1em;
+    justify-items: center;
+    align-items: start;
+    padding: 1em;
+}
+.ui.cards > .card  {
+    width: 100%;
+    /* width: 100%; */
+}
+.card-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: end;
+    text-align: left;
+}
+.card-image img{
+    width: 100%;
+    /* height: auto; */
+}
+
+.card-links-con {
+    display:flex; 
+    align-items: center;
+    gap: 1em;
+}
+.card-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0 0.5em;
+    align-items: center;
+}
+
+.album-title {
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 0.2em;
+}
+.album-artist {
+    font-size: 1.75em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.ui.raised.segment[popover] {
+    border: none;
+    outline: none;
+    margin: auto;
+    position: fixed !important; 
+    height: calc(100% - 6em);
+    width: calc(100% - 4em);
+    max-height: fit-content;
+    overflow: auto;
+}

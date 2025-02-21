@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Ramblings</title>
+    <!-- Add Semantic UI CSS and JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!--  DarkReader CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.58/darkreader.min.js"></script>
+    <!-- Add custom CSS and JavaScript -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/javascript.js"></script>
+</head>
+
+<body onload="init()">
+    <main id="main" class="ui">
+        <header id="navigation" class="ui attached top text menu">
+            <h1 class="header item">Album Ramblings</h1>
+            <nav id="top-menu" class="ui icon item floating simple dropdown">
+                <i class="icon bars"></i>
+                <ul class="menu">
+                    <li class="item"><a class="item" href="#home">Home</a></li>
+                    <li class="item"><a class="item" href="#year-2024">Year 2024</a></li>
+                    <li class="item"> <a class="item" href="#year-2023">Year 2023</a></li>
+                    <li class="item icon" onclick="toggleDarkMode()" onclick="toggleDarkMode()" id="darkModeBtn"><i class="ui icon moon"></i></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="ui" id="home">
+            <div class="text-container">
+                <div>
+                    <h1>Album Ramblings</h1>
+                    
+
+                    <p>This site is a ramblings of a music fanatic. Mostly Metal/Hard music, but with occasional
+                        rock, alternative, pop, punk, electronic.</p>
+                    <i style="font-size: 1.15rem;">About</i>
+                    <p>**DEMO** This site is hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Made for the Coursera <a href="https://www.coursera.org/learn/web-design-project/" target="_blank">Web Design for Everybody Capstone</a>, see the Code for this site at <a href="https://github.com/VanceDR/wdfec-mod5-demo" target="_blank">this GitHub repository</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="ui" id="year-2024">
+            <div class="text-container">
+                <h2>Year 2024</h2>
+                <p>Year 2024 was quite a eventful and emotional year for me. In terms of music, a lot of heavy hitters in terms of riffs and feels.</p>
+            </div>
+            <div class="ui container">
+                <ul id="2024-list" class="ui cards">
+                    <div class="card">
+                        <div class="content items">
+                            <div class="card-top item">
+                                <div class="card-image image">
+                                    <img src="images/anchoret.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="ui rating" data-rating="4" data-max-rating="5"></div>
+                                    <div class="header"><span>Title</span> <span>(Year)</span></div>
+                                    <div class="header"><span>Artist</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque animi, inventore tempora deserunt, minima unde eligendi numquam consectetur ex corrupti deleniti, voluptas cupiditate est sed voluptate quo culpa? Ullam, animi!</p></div>
+                        <div class="extra content">
+                            <details class="ui card-links-con" > 
+                                <summary>Links</summary>
+                                <div class="menu text card-links">
+                                    <a class="item" href="">Links</a>
+                                    <a class="item" href="">Links</a>
+                                    <a class="item" href="">Links</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            
+            
+        </section>
+        <section class="ui" id="year-2023">
+            <div class="text-container">
+                <h2>Year 2023</h2>
+                <p>Here are some of my favorite songs, albums, and artists from 2023:</p>
+            </div>
+            <div class="ui container">
+                <ul id="2023-list" class="ui cards">
+                    
+                </ul>
+            </div>
+        </section>
+        <div popover id="sampleMusicPopover" class="ui segment raised">
+            <div style="float: right; position: relative; cursor: pointer;" onclick="sampleMusicPopover.hidePopover()"><i class="icon close"></i></div>
+            <div class="header">Sample Music</div>
+            <div class="ui divider compact"></div>
+            <div>
+                <iframe id="sampleMusicCon" style="width: 100%; height: 90%;"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
